@@ -1,0 +1,10 @@
+name: dart3d
+author: Christoffer Ekblom
+description: A sample web application
+dependencies:
+  browser: any
+  three:
+    git:
+      ref: master
+      url: 'https://github.com/threeDart/three.dart'
+  vector_math: any
