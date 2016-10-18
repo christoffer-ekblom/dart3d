@@ -1,12 +1,10 @@
+import 'dart:html';
 import 'Game.dart';
-import '../View/Renderer.dart';
 
 class MasterController extends Game {
-  Renderer _renderer;
+  MasterController() {}
 
-  void initialize() {
-    _renderer = new Renderer();
-  }
+  void initialize() {}
 
   void loadContent() {}
 
