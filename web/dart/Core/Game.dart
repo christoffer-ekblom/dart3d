@@ -1,6 +1,6 @@
 import 'dart:html';
-import '../View/Renderer.dart';
-import '../View/ContentManager.dart';
+import 'Renderer.dart';
+import 'ContentManager.dart';
 
 abstract class Game {
   ContentManager _contentManager;

@@ -1,5 +1,5 @@
-import 'Game.dart';
-import '../View/ContentManager.dart';
+import '../Core/Game.dart';
+import '../Core/ContentManager.dart';
 
 class MasterController extends Game {
   MasterController() {}
