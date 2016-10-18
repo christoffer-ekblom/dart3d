@@ -1,22 +1,20 @@
 import 'dart:html';
 import '../View/Renderer.dart';
-import '../View/Content.dart';
+import '../View/ContentManager.dart';
 
 abstract class Game {
-  Content _contentManager;
-
-  Content get ContentManager => _contentManager;
+  ContentManager _contentManager;
 
   Game() {
     double startTime = 0.0;
     Element body = document.body;
     Renderer renderer = new Renderer();
-    _contentManager = new Content();
+    _contentManager = new ContentManager();
 
-    ContentManager.load(body, renderer.GetRenderer.domElement);
+    _contentManager.load(body, renderer.GetRenderer.domElement);
 
     initialize();
-    loadContent();
+    loadContent(_contentManager);
 
     this.run(startTime);
   }
