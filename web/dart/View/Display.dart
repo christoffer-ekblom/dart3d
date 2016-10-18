@@ -8,15 +8,10 @@ class Display {
   int get Height => _height;
 
   Display() {
-    _updateWindowSize();
-    window.onResize.listen(_onWindowResize);
+    updateWindowSize();
   }
 
-  _onWindowResize(e) {
-    _updateWindowSize();
-  }
-
-  _updateWindowSize() {
+  void updateWindowSize() {
     _width = window.innerWidth;
     _height = window.innerHeight;
   }
