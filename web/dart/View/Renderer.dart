@@ -1,5 +1,4 @@
 import 'dart:html';
-import 'package:three/three.dart';
 import 'package:three/extras/renderers/canvas_renderer.dart';
 import 'Display.dart';
 
