@@ -1,5 +1,4 @@
 import 'dart:html';
-import 'package:three/three.dart';
 
 abstract class Game {
   Game() {
