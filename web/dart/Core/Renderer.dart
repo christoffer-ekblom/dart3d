@@ -11,7 +11,7 @@ class Renderer {
   Renderer() {
     _display = new Display();
     _renderer = new CanvasRenderer();
-    _renderer.setSize(_display.Width, _display.Height);
+    _updateWindowSize();
     _display.Screen.onResize.listen(_onWindowResize);
   }
 
