@@ -4,6 +4,7 @@ abstract class Game {
   Game() {
     double startTime = 0.0;
     initialize();
+    loadContent();
     this.run(startTime);
   }
 
