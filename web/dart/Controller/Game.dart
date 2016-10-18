@@ -2,13 +2,14 @@ import 'dart:html';
 
 abstract class Game {
   Game() {
+    double startTime = 0.0;
     initialize();
-    this.run(0.0);
+    this.run(startTime);
   }
 
   void run(double time) {
-    update();
-    draw();
+    update(time);
+    draw(time);
     window.requestAnimationFrame((t) => this.run(t));
   }
 }
