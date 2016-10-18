@@ -7,7 +7,7 @@ abstract class Game {
     this.run(0.0);
   }
 
-  function run(double time) {
+  void run(double time) {
     update();
     draw();
     window.requestAnimationFrame((t) => this.run(t));
