@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:three/extras/renderers/canvas_renderer.dart';
 import 'Display.dart';
 
@@ -13,7 +12,7 @@ class Renderer {
     _display = new Display();
     _renderer = new CanvasRenderer();
     _renderer.setSize(_display.Width, _display.Height);
-    window.onResize.listen(_onWindowResize);
+    _display.Screen.onResize.listen(_onWindowResize);
   }
 
   _onWindowResize(e) {
